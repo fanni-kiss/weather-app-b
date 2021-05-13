@@ -1,0 +1,70 @@
+body {
+  margin-top: 50px;
+}
+.city {
+  margin-top: 50px;
+}
+.city-picture {
+  width: 150px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 100px;
+  top: 145px;
+}
+
+.city-picture-two {
+  width: 150px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  right: 100px;
+  bottom: 90px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+.col-Monday {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-Tuesday {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-Wednesday {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-Thursday {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.col-Friday {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
