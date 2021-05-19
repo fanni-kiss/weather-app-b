@@ -10,7 +10,7 @@ body {
   position: absolute;
   text-align: center;
   left: 100px;
-  top: 145px;
+  top: 200px;
 }
 
 .city-picture-two {
@@ -19,7 +19,7 @@ body {
   position: absolute;
   text-align: center;
   right: 100px;
-  bottom: 90px;
+  bottom: 105px;
 }
 
 h1 {
@@ -38,33 +38,56 @@ h3 {
   font-weight: bold;
   font-size: 30px;
 }
+
+small {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.searchButton {
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #60e9ff;
+  color: white;
+  border-radius: 30%;
+  border-color: white;
+  font-size: 20px;
+}
+
+.cityEnter {
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+}
+
 .col-Monday {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .col-Tuesday {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .col-Wednesday {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .col-Thursday {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .col-Friday {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
