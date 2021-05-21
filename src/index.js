@@ -5,7 +5,13 @@ let h2 = document.querySelector("h2");
 
 let date = now.getDate();
 let hours = now.getHours();
+if (hours < 10){
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10){
+  minutes = `0${minutes}`;
+}
 let year = now.getFullYear();
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -18,6 +24,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(event) {
