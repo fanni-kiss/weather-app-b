@@ -26,6 +26,20 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
    document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+   let iconElement = document.querySelector("#icon")
+   iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+    
+  let iconElement2 = document.querySelector("#icon2")
+  iconElement2.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement2.setAttribute("alt", response.data.weather[0].description);
+
 }
 
 function search(event) {
