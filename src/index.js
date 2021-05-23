@@ -40,6 +40,8 @@ function displayWeatherCondition(response) {
   );
   iconElement2.setAttribute("alt", response.data.weather[0].description);
 
+  celsiusTemperature = response.data.main.temp;
+
 }
 
 function search(event) {
@@ -50,5 +52,32 @@ function search(event) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+function displayFahreinheitTemperature(event){
+  event.preventDefault();
+  let fahreinheitTemperature = (celsiusTemperature*9) / 5+32;
+  let temperatureElement = document.querySelector ("#temperature");
+  temperatureElement.innerHTML = Math.round(fahreinheitTemperature);
+  celsiusLink.classList.remove("active");
+  fahreinheitLink.classList.add("active");
+}
+
+
+function displayCelsiusTemperature(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector ("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  celsiusLink.classList.add("active");
+  fahreinheitLink.classList.remove("active");
+}
+
+let celsiusTemperature = null;
+
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+let fahreinheitLink = document.querySelector("#fahreinheit-link");
+fahreinheitLink.addEventListener("click", displayFahreinheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
