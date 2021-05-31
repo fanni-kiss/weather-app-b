@@ -67,6 +67,9 @@ small {
   font-weight: bold;
   font-size: 25px;
 }
+.minimum-temperature {
+  opacity: 0.6;
+}
 .col-Tuesday {
   text-align: center;
   font-family: "Amatic SC", cursive;
