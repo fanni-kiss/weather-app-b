@@ -42,7 +42,26 @@ function displayWeatherCondition(response) {
 
   celsiusTemperature = response.data.main.temp;
 
+
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class ="row">`;
+  let days = ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML + 
+   ` 
+  <div class="col-2">${day} <br> 16°C | <span class="minimum-temperature">5°C</span>  <br> <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="40px"></div>`;
+  })
+  
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  
+}
+
 
 function search(event) {
   event.preventDefault();
@@ -71,6 +90,8 @@ function displayCelsiusTemperature(event){
 }
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 
 let searchForm = document.querySelector("#search-form");

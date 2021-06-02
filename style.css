@@ -4,23 +4,6 @@ body {
 .city {
   margin-top: 50px;
 }
-.city-picture {
-  width: 150px;
-  display: block;
-  position: absolute;
-  text-align: center;
-  left: 100px;
-  top: 200px;
-}
-
-.city-picture-two {
-  width: 150px;
-  display: block;
-  position: absolute;
-  text-align: center;
-  right: 100px;
-  bottom: 105px;
-}
 
 h1 {
   text-align: center;
@@ -61,7 +44,7 @@ small {
   font-size: 25px;
 }
 
-.col-Monday {
+.weather-forecast {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-weight: bold;
@@ -69,30 +52,6 @@ small {
 }
 .minimum-temperature {
   opacity: 0.6;
-}
-.col-Tuesday {
-  text-align: center;
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 25px;
-}
-.col-Wednesday {
-  text-align: center;
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 25px;
-}
-.col-Thursday {
-  text-align: center;
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 25px;
-}
-.col-Friday {
-  text-align: center;
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 25px;
 }
 
 .units .active {
